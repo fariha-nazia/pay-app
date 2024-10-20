@@ -42,7 +42,7 @@
 
 
                         <!-- add money form start-->
-                        <div>
+                        <div >
                             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                                 <form class="card-body">
                                   <div class="form-control">
@@ -65,6 +65,30 @@
                               </div>
                         </div>
 
+                        <!-- cash out money start -->
+                        <div class="hidden">
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                  <div class="form-control">
+                                    <label class="label">
+                                      <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="input-cash-out" type="number" placeholder="Cash Out Amount" class="input input-bordered" required />
+                                  </div>
+                                  <div class="form-control">
+                                    <label class="label">
+                                      <span class="label-text">Password</span>
+                                    </label>
+                                    <input id="input-cash-out-pin" type="password" placeholder="Pin Number 3333" class="input input-bordered" autocomplete="off" required />
+
+                                  </div>
+                                  <div class="form-control mt-6">
+                                    <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                                  </div>
+                                </form>
+                              </div>
+                        </div>
+
                         <!-- end -->
 
                       </div>
@@ -75,5 +99,7 @@
     </main>
 
     <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
 </body>
 </html>
