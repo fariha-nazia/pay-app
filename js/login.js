@@ -13,7 +13,9 @@ document.getElementById('button-login').addEventListener('click', function(event
 
         // step 3: now we need to validate it. This process of validation is not correct, in future we will do this using server and other things.
         if(phoneNumber === '123' && pinNumber === '3333'){
-                console.log('Logged in');
+                // console.log('Logged in');
+                // step 4: now if the number and pass is correct it will take you to the home page. And to do so the step are given
+                window.location.href = '/home.html';
         }
         else{
                 alert('invalid input');
